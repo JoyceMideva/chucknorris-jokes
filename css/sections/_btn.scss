@@ -1,0 +1,62 @@
+@use"../utility/mixins"as *;
+#btn{
+    background-color: white;
+    margin-top:2em ;
+    border-radius: 5px;
+    border: none;
+    padding: 2em;
+    text-align: center;
+    width: 40%;
+    font-size: 1rem;
+    &:hover{
+        background-color: orange;
+    }
+    margin: 9em;
+}
+.btn{
+    padding: 5em;
+    &__container{
+        @include flex(center,center)
+    }
+    &__right{
+        // border:5px ;
+    width: 50%;
+    background-color:magenta;
+    color: white;
+    border-radius: 10px;
+    height: 50vh;
+    padding: 2em;
+    text-align: center;
+    margin: 0 auto;
+    #jokes{
+        height: 15vh;
+        @include flex(center,center,column)
+    }
+    }
+    
+    h1{
+        color: blueviolet;
+        font-size: 3rem;
+        text-align: center;
+        margin-bottom: .5em;
+        &:hover{
+            font-family: 'Rhodium Libre', serif;
+            color: white;
+        }
+    }
+
+    margin-top: 2em;
+ .emojis{
+    font-size: 5rem;
+    
+ } 
+ p{
+    font-size: 1.3rem;
+    text-align: center;
+    margin-bottom: .5em;
+    &:hover{
+        font-family: 'Rhodium Libre', serif;
+        color: black;
+    }
+ }  
+}
